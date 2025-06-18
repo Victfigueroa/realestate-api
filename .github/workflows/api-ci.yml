@@ -28,7 +28,7 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }
+            ${{ runner.os }}
       - name: Instalar dependencias
         run: npm ci
       - name: Ejecutar pruebas con Jest
